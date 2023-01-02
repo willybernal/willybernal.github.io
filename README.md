@@ -1,4 +1,4 @@
-# Portfolio of Willy 'Giovanni' Bernal
+# Portfolio of Willy *Giovanni* Bernal
  
 Main Repository
 
