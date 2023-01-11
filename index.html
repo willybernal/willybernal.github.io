@@ -1,29 +1,587 @@
-<html>
-<h1>Willy <i>Giovanni</i> Bernal's GitHub Portfolio</h1>
-<img src="./giova1.png" width=300 />
- 
-<section>
-<h2>Data Engineering Projects</h2>
-<a href="https://github.com/willybernal/predict-housing-prices/blob/main/final_project.ipynb"><h2>Housing Market Prediction: </h2></a> 
-<p>Modeling and Prediction of housing prices by leveraging characteristics and features of houses sold. Python's Scikit-learn, Matplotlib, and Pandas are used.</p>
-<a href="https://github.com/willybernal/mrts-analysis/blob/ee2eebc2e6f3d1c223e3a7ed1eee4743a2c87734/Final_Project.ipynb"><h2>Monthly Retail Trade Survey Data Analysis (MRTS): </h2></a> 
-<p>This project analyzes the MRTS data and draws insightful results and conclusions. It implements ETL (Extract, Transform, and Load), analysis, and visualization of that data: A MySQL database is populated from raw data.</p>
-<a href="https://github.com/willybernal/flight-api"><h2>Flight Information API</h2></a> 
-<p>Content Management System (CMS). The system features a database of Airports, Flights, and Airlines. This project implements an API for flight information; Strapi was used to create and publish the API. The project also demonstrates the use of containers and how to run code inside them. The testing for the API was done using Postman: the collection of requests is saved inside the postman folder. Finally, code was generated in Python to send GET requests.</p>
-<!-- <a href="https://willybernal.github.io/PCDE-Activity-9.1"><h2>PCDE-Activity 9.1</h2></a> 
-<p>MLE+ is an open-source Matlab/Simulink toolbox for co-simulation with the whole-building energy simulator EnergyPlus. It is designed for engineers and researchers who are familiar with Matlab and Simulink and want to use these software tools in building energy simulation.</p> -->
-</section> 
+<!DOCTYPE html>
+<html lang="en">
 
- <section>
-<h2>Co-Simulation Toolbox and Optimization</h2>
-<a href="https://github.com/willybernal/mlep"><h2>MLE+: Co-Simulation Toolbox</h2></a> 
-<p>MLE+ is an open-source Matlab/Simulink toolbox for co-simulation with the whole-building energy simulator EnergyPlus. It is designed for engineers and researchers who are familiar with Matlab and Simulink and want to use these software tools in building energy simulation.</p>
-<a href="https://github.com/NREL/CampusEnergyModeling"><h2>MLE+: Co-Simulation Toolbox</h2></a> 
-<p>NREL's Campus Energy Modeling project provides a suite of simulation tools for integrated, data driven energy modeling of commercial buildings and campuses using Simulink. The tools enable development of fully interconnected models for commercial campus energy infrastructure, including electrical distribution systems, district heating and cooling, onsite generation (both conventional and renewable), building loads, energy storage, and control systems.</p>
-<a href="https://github.com/willybernal/aws_mlep"><h2>MLE+: Cloud Optimization (AWS)</h2></a> 
-<p>AWS-MLEP allows you to perform parametric simulation and search optimization by implementing a Genetic Algorithm. In each of these two categories we can optimized for design parameters (e.g., wall thickness and material properties) as well as run-time ones(e.g., room setpoints, occupancy, lighting, loads).</p>
-</section>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Giovanni Bernal</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.10.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Giovanni Bernal</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://github.com/willybernal" class="github"><i class="bx bxl-github"></i></a>
+          <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <a href="https://www.linkedin.com/in/giovanni-bernal-36220858/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Publications</span></a></li>
+          <li><a href="#education" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Education</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Willy <i>Giovanni</i> Bernal</h1>
+      <p>I'm a <span class="typed" data-typed-items="Data Scientist, Data Engineer, Developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>M. Sc. Giovanni Bernal leads innovative research at the intersection between energy-efficient buildings, renewable generation, data analysis, and smart controls. With his unique Electrical and Mechanical Engineering background, Giovanni has engineered integrated solutions to large, multi-disciplinary, and complex projects. Giovanni is highly engaged with continuous learning and his technical growth: his Data Engineering training is providing new tools to solve Big Data challenges. Deep to his core is his principle of collaboration and information dissemination, shown in his unmistakable passion for mentoring/tutoring and his several journal and conference publications.</p>
+          <ul>
+            <li>Expert in data acquisition systems, data analysis, optimization, and simulation.</li>
+            <li>Strong software and hardware development skills with multiple released tools.</li>
+            <li>Project Leader for Technology Demonstrations of Energy Efficiency and Renewable Energy</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Data Scientist &amp; Data Engineer.</h3>
+            <p class="fst-italic">
+              Data Engineer with a passion for energy-efficient buildings, renewable generation, data analysis, and smart controls. Deep to his core is his principle of collaboration and information dissemination, shown in his unmistakable passion for mentoring/tutoring, his several publications, and publicly avaialble tools.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>Feb. 27th 1986</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>
+                    <a href="https://willybernal.github.io">https://willybernal.github.io</a></span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 720 326 0841</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lima, Peru</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>M. Sc. in Electrical and Mechanical Eng.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Prof. Certificate in Data Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>willybernal@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <!-- <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <!-- <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Giovanni has developed multiple skills through his academic career and professional life.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Matlab/Simulink<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++/C<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>You can download the latest version of Giovanni's CV in English and Spanish at <a href="https://www.linkedin.com/in/giovanni-bernal-36220858/">LinkedIn</a></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4><a href="https://www.nrel.gov/research/staff/willy-bernalheredia.html">Research Engineer</a></h4>
+              <h4><a href="https://www.nrel.gov/about/">National Renewable Energy Laboratory</a> - <i>Golden, Colorado, CO</i></h4>
+              <h5>March 2015 - Present</h5>
+              <p>U.S. Department of Energy's world-class laboratory focused on energy efficiency and renewable energy.</p>
+              <ul>
+                <li>Principal investigator (PI) of multi-year and inter-lab projects (>$3M) directed by the US Department of Energy:</li>
+                  <ul>
+                    <li>Produce high-quality publications and meet stringent deadlines in very uncertain conditions: COVID and novel technology.</li>
+                    <li>Secured funding for innovative projects through proposal writing (>$3M).</li>
+                    <li>Oversee lab and field evaluations of state-of-the-art technologies (e.g., electrical interconnection devices, battery systems, PV panels)</li>
+                  </ul>
+                <li>Technical performer, hardware and software expertise:</li>
+                  <ul>
+                    <li>Software development for cloud-optimization, controls, and co-simulation tools. Those tools are available to the public and have lead to cutting-edge research, publications, and user applications.</li>
+                    <li>Perform data analysis, optimization, and develop smart controls for emerging technologies.</li>
+                    <li>Lead Power Hardware-in-the-Loop simulations to augment existing modeling capabilities for the laboratory: working as a liaison between the Power Systems Group and the Buildings Group</li>
+                  </ul>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Controls and Mechatronics Engineer</h4>
+              <h4><a href="https://www.litmotors.com/">Lit Motors</a> - <i>San Francisco, CA</i></h4>
+              <h5>Jun 2014 - March 2015</h5>
+              <p>Electric Vehicle Startup developing an Auto-balancing 2-wheel Electric Vehicle (AEV)</p>
+              <ul>
+                <li>Software and hardware development to interface with sensors, actuators, and power train of the vehicle.</li>
+                <li>Speed up iteration cycle for fast prototyping: Reached same-day development and implementation of updated controls.</li>
+                <li>Collaborated in implementing the first stable balancing and driving controls for the AEV.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graduate Research Assistant</h4>
+              <h4><a href="https://mlab-upenn.github.io/lab_website/index.html">xLAB</a> - <i>Philadelphia, PA</i></h4>
+              <h5>Aug 2010 - May 2014</h5>
+              <p>Embedded Laboratory focused on Cyber-Physical Systems</p>
+              <ul>
+                <li>Research and synthesize controls for energy-efficient buildings.</li>
+                <li>Develop and provide support for MLE+, a co-simulation program for controls of energy-efficient buildings (MLE+).</li>
+                <li>Develop and deploy a fleet of wireless sensors for data gathering.</li>
+                <li>Lead a team to design and fabricate a wearable Electrocardiogram Patch for long-term monitoring (1-month).</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Research Participation Program</h4>
+              <h4><a href="https://www.nrel.gov/about/">National Renewable Energy Laboratory</a> - <i>Golden, CO</i></h4>
+              <h5>Summer 2013</h5>
+              <p>Graduate Internship</p>
+              <ul>
+                <li>Develop an integrated framework for campus-wide building energy modeling and Hardware-in-the-Loop simulation in the Matlab/Simulink environment.</li>
+                <li>Expand the capabilities of MLE+ to interconnect multiple buildings through a heating/cooling piping system.</li>
+                <li>Automate the dispatch of multiple Computing Units from Amazon Web Services to distribute the computation of multiple building simulations.</li>
+                <li>Create a database with a weather feed to pull information on demand for the simulations.</li>
+                <li>Program Real-Time target machine (OPAL RT-Lab) to perform hardware-in-the-loop simulation.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Research Assistant</h4>
+              <h4><a href="https://www.modlabupenn.org/">ModLab</a> - <i>Philadelphia, PA</i></h4>
+              <h5>2006-2010</h5>
+              <p>Laboratory for Modular Robotics.</p>
+              <ul>
+                <li>Built a dynamic model capable of simulating the dynamics of the robotic centipede in two and three dimensions utilizing the Spring Loaded Inverted Pendulum (SLIP) template for the dynamical model.</li>
+                <li>Contributed to the design, control, and testing of a novel scalable biologically-inspired legged style of locomotion.</li>
+                <li>Responsible of design, software development, and manufacturing of custom mechanical and electrical research platforms: CKbot.</li>
+                <li>Gait Generation and hardware design for the Self-Assembly after Explosion (SAE). TechFest presentations in Chicago (2008) and Bombay (2009).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Collection of technical projects.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <img style='float:left;width:500px;height:350px; margin-right:10px;' src="assets\img\portfolio\housing_prices.png"/>
+                <p><b>Housing Prices Prediction</b></p>
+                <p><b>Description: </b>Predicting housing prices can be achieved by leveraging characteristics and features of houses sold. Those features can be used as predictors to train a model. The performance of the model can vary according to the correlation of the features with the price. The following report shows the analysis perform to analyze data and train a model to predict housing prices.</p>
+                <hr>
+                <p><b>GitHub Repo: </b><a href="https://github.com/willybernal/predict-housing-prices">https://github.com/willybernal/predict-housing-prices</a></p>
+                <p><b>Report: </b><a href="https://github.com/willybernal/predict-housing-prices/blob/main/final_project.ipynb">https://github.com/willybernal/predict-housing-prices/blob/main/final_project.ipynb</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <img style='float:left;width:500px;height:350px; margin-right:10px;' src="assets\img\portfolio\mrts.png"/>
+                <p><b>Monthly Retail Trade Survey Data Analysis (MRTS)</b></p>
+                <p><b>Description: </b>This project analyzes the MRTS data and draws insightful results and conclusions. It implements ETL (Extract, Transform, and Load), analysis, and visualization of that data: A MySQL database is populated from raw data.</p>
+                <hr>
+                <p><b>GitHub Repo: </b><a href="https://github.com/willybernal/mrts-analysis">https://github.com/willybernal/mrts-analysis</a></p>
+                <p><b>Report: </b><a href="https://github.com/willybernal/mrts-analysis/blob/ee2eebc2e6f3d1c223e3a7ed1eee4743a2c87734/Final_Project.ipynb">https://github.com/willybernal/mrts-analysis/blob/ee2eebc2e6f3d1c223e3a7ed1eee4743a2c87734/Final_Project.ipynb</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <img style='float:left;width:500px;height:350px; margin-right:10px;' src="assets\img\portfolio\flight_api.png"/>
+                <p><b>Flight Information API</b></p>
+                <p><b>Description: </b>Content Management System (CMS). The system features a database of Airports, Flights, and Airlines. This project implements an API for flight information; Strapi was used to create and publish the API. The project also demonstrates the use of containers and how to run code inside them. The testing for the API was done using Postman: the collection of requests is saved inside the postman folder. Finally, code was generated in Python to send GET requests.</p>
+                <hr>
+                <p><b>GitHub Repo: </b><a href="https://github.com/willybernal/flight-api">https://github.com/willybernal/flight-api</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <img style='float:left;width:500px;height:200px; margin-right:10px;' src="assets\img\portfolio\mlep.png"/>
+                <p><b>MLE+: Co-Simulation Toolbox</b></p>
+                <p><b>Description: </b>MLE+ is an open-source Matlab/Simulink toolbox for co-simulation with the whole-building energy simulator EnergyPlus. It is designed for engineers and researchers who are familiar with Matlab and Simulink and want to use these software tools in building energy simulation.</p>
+                <hr>
+                <p><b>GitHub Repo: </b><a href="https://github.com/willybernal/mlep">https://github.com/willybernal/mlep</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+              <img style='float:left;width:500px;height:350px; margin-right:10px;' src="assets\img\portfolio\mlep_campus.png"/>
+              <p><b>MLE+: Campus Energy Modeling</b></p>
+              <p><b>Description: </b>NREL's Campus Energy Modeling project provides a suite of simulation tools for integrated, data driven energy modeling of commercial buildings and campuses using Simulink. The tools enable development of fully interconnected models for commercial campus energy infrastructure, including electrical distribution systems, district heating and cooling, onsite generation (both conventional and renewable), building loads, energy storage, and control systems.
+              </p>
+              <p><b>GitHub Repo: </b><a href="https://github.com/NREL/CampusEnergyModeling">https://github.com/NREL/CampusEnergyModeling</a></p>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12">
+                <img style='float:left;width:500px;height:200px; margin-right:10px;' src="assets\img\portfolio\mlep_aws.png"/>
+                <p><b>MLE+: Cloud Optimiztion (AWS)</b></p>
+                <p><b>Description: </b>AWS-MLEP allows you to perform parametric simulation and search optimization by implementing a Genetic Algorithm. In each of these two categories we can optimized for design parameters (e.g., wall thickness and material properties) as well as run-time ones(e.g., room setpoints, occupancy, lighting, loads).</p>
+                </p>
+                <p><b>GitHub Repo: </b><a href="https://github.com/willybernal/aws_mlep">https://github.com/willybernal/aws_mlep</a></p>
+            </div>
+        </div>
+
+      
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Publications Section ======= -->
+    <section id="publications" class="publications">
+      <div class="container">
+        <div class="section-title">
+          <h2>Publications</h2>
+          <p>Giovanni Bernal has published several technical reports, conference papers, and journal publications throughout his career.</p>
+          <hr>
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Site</th>
+                <th scope="col">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Google Scholar</th>
+                <td><a href="https://scholar.google.com/citations?user=2-VyNhMAAAAJ&hl=en">https://scholar.google.com/citations?user=2-VyNhMAAAAJ&hl=en</a></td>
+              </tr>
+              <tr>
+                <th scope="row">OSTI</th>
+                <td><a href="https://orcid.org/0000-0001-8674-3443">https://orcid.org/0000-0001-8674-3443</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <h3>Journal Publications</h3>
+          <ul>
+            <li>Nazir M, Ghatpande O, <b>Bernal Heredia W</b>, Wierzbanowski C, Gerber D, Saha A. "Standardizing Performance Metrics for Building-Level Electrical Distribution Systems."" Energies. 2022; 15(1):136. <a href="https://doi.org/10.3390/en15010136">https://doi.org/10.3390/en15010136</a></li>
+            <li>Daniel L. Gerber, Omkar A. Ghatpande, Moazzam Nazir, <b>Willy G. Bernal Heredia</b>, Wei Feng, Richard E. Brown, "Energy and power quality measurement for electrical distribution in AC and DC microgrid buildings,"" Applied Energy, Volume 308, 2022, 118308, ISSN 0306-2619, <a href="https://doi.org/10.1016/j.apenergy.2021.118308">https://doi.org/10.1016/j.apenergy.2021.118308</a></li>
+            <li>Vossos, V., Gerber, D. L., Gaillet-Tournier, M., Nordman, B., Brown, R., <b>Bernal Heredia, W.</b>, Ghatpande, O., et al. (2022). "Adoption Pathways for DC Power Distribution in Buildings."" Energies, 15(3), 786. MDPI AG. Retrieved from <a href="http://dx.doi.org/10.3390/en15030786">http://dx.doi.org/10.3390/en15030786</a></li>
+            <li><b>Willy Bernal Heredia</b>, Kalpesh Chaudhari, Andrew Meintz, Myungsoo Jun, Shanti Pless, "Evaluation of smart charging for electric vehicle-to-building integration: A case study." Applied Energy, Volume 266, 2020, 114803, ISSN 0306-2619, <a href="https://doi.org/10.1016/j.apenergy.2020.114803">https://doi.org/10.1016/j.apenergy.2020.114803</a></li>
+          </ul>
+          <h3>Conference Papers</h3>
+          <ul>
+            <li>Vossos, V.; Gaillet-Tournier, M.; Gerber, D.; Nordman, B.; Brown, R.; <b>Bernal, W.</b>; Ghatpande, O.; Saha, A.; Deru, M.; Frank, S. "Direct-DC Power in Buildings: Identifying the Best Applications Today for Tomorrow’s Building Sector."" In Proceedings of the ACEEE Summer Study on Energy Efficiency in Buildings, ACEEE, Pacific Grove, CA, USA; 2020; p. 15.<a href="https://www.osti.gov/biblio/1798804">https://www.osti.gov/biblio/1798804</a></li>
+            <li>M. Nazir, O. A. Ghatpande, <b>W. G. Bernal Heredia</b>, and D. Brhlik, "Instrumentation for Assessing DC Electrical Distribution Systems in Buildings," 2022 IEEE International Instrumentation and Measurement Technology Conference (I2MTC), Ottawa, ON, Canada, 2022, pp. 1-6, doi: 10.1109/I2MTC48687.2022.9806653. <a href="https://ieeexplore.ieee.org/document/9806653">https://ieeexplore.ieee.org/document/9806653</a></li>
+            <li>D. L. Gerber, O. A. Ghatpande, M. Nazir, <b>W. G. B. Heredia</b>, W. Feng and R. Brown, "Electrical Measurement and Verification of Energy in DC Buildings," 2021 IEEE Fourth International Conference on DC Microgrids (ICDCM), Arlington, VA, USA, 2021, pp. 1-6, doi: 10.1109/ICDCM50975.2021.9504609. <a href="https://ieeexplore.ieee.org/document/9504609">https://ieeexplore.ieee.org/document/9504609</a></li>
+            <li>S. Hutchinson, <b>W. G. Bernal Heredia</b> and O. A. Ghatpande, "Resilience Metrics for Building-Level Electrical Distribution Systems with Energy Storage", 2022 IEEE Conference on Technologies for Sustainability (SusTech), 2022, pp. 71-78, doi: 10.1109/SusTech53338.2022.9794261. <a href="https://ieeexplore.ieee.org/document/9794261">https://ieeexplore.ieee.org/document/9794261</a></li>
+            <li><b>Willy Bernal</b>, Madhur Behl, Truong X. Nghiem, and Rahul Mangharam, "Campus-Wide Integrated Building Energy Simulation", IBPSA Building Simulation Conference, International Building Performance Simulation. December 2015. <a href="https://www.researchgate.net/publication/303970470_Campus-Wide_Integrated_Building_Energy_Simulation">https://www.researchgate.net/publication/303970470_Campus-Wide_Integrated_Building_Energy_Simulation</a></li>
+            <li><b>Bernal, Willy</b>; Behl, Madhur; Nghiem, Truong X; Mangharam, Rahul; "MLE+ a tool for integrated design and deployment of energy efficient building controls".	Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings. Pg. 123-130.	2012. <a href="https://www.researchgate.net/publication/262221515_MLE_A_tool_for_integrated_design_and_deployment_of_energy_efficient_building_controls/citation/download">https://www.researchgate.net/publication/262221515_MLE_A_tool_for_integrated_design_and_deployment_of_energy_efficient_building_controls/citation/download</a></li>
+            <li>Sastra, J, <b>Bernal Heredia</b>, WG, Clark, J, & Yim, M. "A Biologically-Inspired Dynamic Legged Locomotion With a Modular Reconfigurable Robot." Proceedings of the ASME 2008 Dynamic Systems and Control Conference. ASME 2008 Dynamic Systems and Control Conference, Parts A and B. Ann Arbor, Michigan, USA. October 20–22, 2008. pp. 1467-1474. ASME. <a href="https://doi.org/10.1115/DSCC2008-2402">https://doi.org/10.1115/DSCC2008-2402</a></li>
+            <li><b>Bernal, Willy</b>; Behl, Madhur; Nghiem, Truong; Mangharam, Rahul; "MLE+ design and deployment integration for energy-efficient building controls".	Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings. 215-216.	2012. <a href="https://dl.acm.org/doi/10.1145/2422531.2422577">https://dl.acm.org/doi/10.1145/2422531.2422577</a></li>
+            </li>
+          </ul>
+          <h3>Technical Reports</h3>
+          <ul>
+            <li>Kung, Feitau; Frank, Stephen; Scheib, Jennifer; <b>Bernal Heredia, Willy</b>; Pless, Shanti; "Supervisory Control of Loads and Energy Storage in Next-Generation Zero Energy Buildings". 2016.	National Renewable Energy Lab.(NREL), Golden, CO (United States). <a href="https://www.nrel.gov/docs/fy16osti/67007.pdf">https://www.nrel.gov/docs/fy16osti/67007.pdf</a></li>
+            <li>Benne, Kyle, Ball, Brian, <b>Bernal Heredia, Willy</b>, Cutler, Dylan, Frank, Stephen, Brackney, Larry, Petersen, Anya, Shapinsky, Tobias, Long, Nicholas, Swindler, Alex, Coleman, Tim, Bonnema, Eric, Klun, Lauren, & ACT. (2018, November 14). Alfalfa [Computer software]. https://www.osti.gov//servlets/purl/1484597. <a href="https://doi.org/10.11578/dc.20181205.2 ">https://doi.org/10.11578/dc.20181205.2</a></li>
+            <li>Cutler, Dylan; <b>Bernal Heredia, Willy</b>; Dean, Jesse; 	"Case Study: Laboratory and Field Evaluation of Circuit-Level Electrical Submetering with Wireless Current Transformers". 2019.	National Renewable Energy Lab.(NREL), Golden, CO (United States)<a href="https://www.osti.gov/biblio/1530174">https://www.osti.gov/biblio/1530174</a></li>
+            <li><b>Bernal Heredia, Willy</b>; Cutler, Dylan; Dean, Jesse; "Case study: Field evaluation of a low-cost circuit-level electrical submetering system". 2021. National Renewable Energy Lab.(NREL), Golden, CO (United States)<a href="https://www.osti.gov/biblio/1762442">https://www.osti.gov/biblio/1762442</a></li>
+            <li> Saxon, Aron, & <b>Bernal Heredia, Willy</b>. "Technology Evaluation of the Yotta SolarLEAF: A Panel-Based Thermally Managed Battery Module." United States. <a href="https://doi.org/10.2172/1797568">https://doi.org/10.2172/1797568</a></li>
+            <li>Cutler, Dylan, <b>Bernal Heredia, Willy</b>, & Dean, Jesse. "Case Study: Laboratory and Field Evaluation of Circuit-Level Electrical Submetering with Integrated Metering System."" United States. <a href="https://doi.org/10.2172/1810060">https://doi.org/10.2172/1810060</a></li>
+          </ul>
+        </div>
+      </div>
+    </section><!-- End Publications Section -->
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="education">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Education</h2>
+          <p>Giovanni started his academic journey at the Universidad Nacional de Ingenieria in Lima, Peru. As the top student is his class, he was admitted as a transfer student at the University of Pennsylvania.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="education-item">
+              <h4><b>Professional Certificate in Data Engineering</b></h4>
+              <h5>Aug 2022 – Mar 2023 (Expected)</h5>
+              <h4><i><a href="https://executive-ed.xpro.mit.edu/professional-certificate-data-engineering?utm_source=Google&utm_network=g&utm_medium=c&utm_term=mit%20xpro%20data%20engineering&utm_location=9060924&utm_campaign_id=19185079800&utm_adset_id=145398964058&utm_ad_id=640289052170&gclid=CjwKCAiAk--dBhABEiwAchIwkX09u36FOXTvOkQx49m30SExoY0YY7O3K7o9qUCqbTQtRG9KfDkzMxoCLJYQAvD_BwE">MIT xPRO</a> (Virtual)</i></h4>
+              <p><b>Coursework:</b> Develop and analyze databases using SQL and Python, Implement artificial intelligence (AI)/machine learning (ML) algorithms, Manage Big Data using data warehousing and workflow management platforms, Build a user interface to view and interact with large amounts of live streaming data.</p>
+            </div>
+            <div class="education-item">
+              <h4><b>Master of Mechanical and Electrical Engineering</b></h4>
+              <h5>2010 - 2014</h5>
+              <h4 style="color:blue;"><i>University of Pennsylvania, Philadelphia, PA</i></h4>
+              <p><b>Coursework: </b> Real-Time Embedded Systems, Networking Theory and Fund., Modern Convex Optimization, Machine Learning, Non-Linear Control Theory, Digital Communication Systems.</p>
+            </div>
+            <div class="resume-item">
+              <h4><b>Bachelor of Science in Mechanical and Electrical Engineering</b></h4>
+              <h5>2005 - 2010</h5>
+              <h4 style="color:blue;"><i>University of Pennsylvania, Philadelphia, PA</i></h4>
+              <p><b>Coursework: </b>Advanced Mechatronics, Robotics and Automation, Embedded Systems, Linear Systems Theory</p>
+            </div>
+          </div>
+          <div class="resume-item">
+            <h4><b>Bachelor of Science in Mechanical Engineering (Transfer)</b></h4>
+            <h5>2003 - 2005</h5>
+            <h4 style="color:blue;"><i>Universidad Nacional de Ingenieria, Lima, Peru</i></h4>
+            <p><b>Top Student in the Class. </b>Transfer to the University of Pennsylvania</p>
+          </div>
+      </div>
+      </div>
+    </section><!-- End Education Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Please reach out if you would like to discuss any of my work or collaborate in future endevours.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-10 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Lima, PERU</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>willybernal@gmail.com</p>
+              </div>
+
+              <div class="linkedin">
+                <i class="bi bi-phone"></i>
+                <h4>Contact:</h4>
+                <p><a href="https://www.linkedin.com/in/giovanni-bernal-36220858">https://www.linkedin.com/in/giovanni-bernal-36220858</a></p>
+              </div>
+
+              <!-- <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxz7uGfbFBZERSi5FzLlsIBQ&key=" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 
 </html>
-
-
